@@ -1,0 +1,10 @@
+body{
+    background-color: dodgerblue;
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+
+}
