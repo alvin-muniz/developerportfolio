@@ -13,7 +13,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3em 1fr 100px;
+    grid-template-rows: 4em 1fr 100px;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -32,7 +32,12 @@ main{
     background-color: white;
 }
 
-.circle{
+main div a{
+    text-decoration: none;
+}
+
+#circle{
+    font-size: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,6 +51,7 @@ main{
 
 .triangle {
     display: flex;
+    font-size: 2.5em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -58,14 +64,27 @@ main{
     grid-column: 2 / span 2;
 }
 
-.triangle p{
+.triangle a{
     position: relative;
     width: 100px;
     top: 250px;
 }
 
+.blurb{
+    grid-row: 4 / span 2;
+    grid-column: 2 / span 3;
+    font-size: 2em;
+}
+
+.image{
+    grid-row: 4 / span 2;
+    grid-column: 6 / span 2;
+    height: 280px;
+}
+
 .square
  {
+    font-size: 2.5em;
     display: flex;
     justify-content: center;
     align-items: center;
