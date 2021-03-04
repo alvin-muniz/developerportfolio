@@ -32,8 +32,9 @@ main{
     background-color: white;
 }
 
-main div a{
+main div a:visited{
     text-decoration: none;
+    color: black;
 }
 
 #circle{
