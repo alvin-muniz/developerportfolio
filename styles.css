@@ -1,10 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&display=swap');
+
+
 body{
     background-color: dodgerblue;
 }
 
 .container{
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(8,1fr);
+    margin: 0;
+    padding: 0;
+    background-color: rebeccapurple;
+    height: 95vh;
+}
 
+.footer{
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    grid-row: 8 / span 1;
+    grid-column: 1 / span 13;
+    background-color: fuchsia;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.middle{
+    display: grid;
+    grid-row: 2 / span 1;
+    grid-column: 5/ span 5;
+    align-items: center;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+}
+.inner-grid{
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / span 1;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 0px;
+}
+
+.verb a:nth-child(1){
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+
+
+}
+
+
+.verb a:nth-child(2){
+    grid-column: 1 / span 6;
+    grid-row: 2 / span 1;
+
+}
+
+.verb a:nth-child(3){
+    grid-column: 1 / span 6;
+    grid-row: 3 / span 1;
+
+}
+
+.verb a:nth-child(5){
+    grid-column: 1 / span 6;
+    grid-row: 4 / span 1;
+    transform: rotate(-11deg);
+}
+
+/*.drop-cap{*/
+/*    font-family: "Fira Code",Courier ;*/
+/*    font-size: 25em;*/
+/*    grid-column: 1 / span 2;*/
+/*    grid-row: 1 / span 5;*/
+/*    background-color: mediumslateblue;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    margin: 0;*/
+/*}*/
+
+.verb{
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 6;
+    font-family: Courier;
+    line-height: .87;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    font-size: 11em;
+    background-color: seagreen;
+}
+
+.verb a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.lead{
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    grid-row: 1/ span 1;
+    grid-column: 1 / span 13;
+    background-color: darkgoldenrod;
+    /*transform: rotate(-90deg);*/
 }
