@@ -3,14 +3,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap');
 
-body{
-    background-color: dodgerblue;
+body {
+    background-color: white;
     margin: 0;
     font-family: 'Zilla Slab Highlight', cursive;
 
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4em 1fr 100px;
@@ -19,33 +19,32 @@ body{
     height: 100vh;
 }
 
-header{
+header {
     grid-row: 1 / span 1;
     background-color: blue;
 }
 
-main{
+main {
     display: grid;
     grid-row: 2;
     grid-template-rows: repeat(5, 20%);
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(8, 1fr);
     background-color: white;
 }
 
-main div a:visited{
+main div a:visited {
     text-decoration: none;
     color: black;
 }
 
 
-
-#circle{
+.circle {
     font-size: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 25vh;
-    height:  25vh;
+    height: 25vh;
     background: gold;
     border-radius: 50%;
     grid-row: 2 / span 1;
@@ -60,33 +59,33 @@ main div a:visited{
     align-items: center;
     width: 0px;
     height: 0px;
-    border-left: 330px solid transparent;
-    border-right: 330px solid transparent;
+    border-left: 364px solid transparent;
+    border-right: 364px solid transparent;
     border-bottom: 364px solid red;
     grid-row: 2 / span 2;
     grid-column: 2 / span 2;
 }
 
-.triangle a{
+.triangle a {
     position: relative;
     width: 100px;
     top: 250px;
 }
 
-.blurb{
-    grid-row: 4 / span 2;
+.blurb {
+    margin: 1em 0 0 0;
+    grid-row: 4 / span 1;
     grid-column: 2 / span 3;
     font-size: 2em;
 }
 
-.image{
+.image {
     grid-row: 4 / span 2;
     grid-column: 6 / span 2;
     height: 280px;
 }
 
-.square
- {
+.square {
     font-size: 2.5em;
     display: flex;
     justify-content: center;
@@ -98,9 +97,45 @@ main div a:visited{
     grid-column: 5 / span 2;
 }
 
+.spin{
+    /*background-color:#555;*/
+    /*width:50px;*/
+    /*height:50px;*/
+    /*margin:20px auto;*/
+    -webkit-animation:rescale 2s infinite;
+    animation: rescale 2s infinite;
+}
+
+@-webkit-keyframes rescale{
+    0% {transform:rotate(0deg);}
+    10% {transform:rotate(36deg);}
+    20% {transform:rotate(72deg);}
+    30% {transform:rotate(108deg);}
+    40% {transform:rotate(144deg);}
+    50% {transform:rotate(180deg);}
+    60% {transform:rotate(216deg);}
+    70% {transform:rotate(252deg);}
+    80% {transform:rotate(288deg);}
+    90% {transform:rotate(334deg);}
+    100% {transform:rotate(360deg);}
+}
+
+@keyframes rescale{
+    0% {transform:rotate(0deg);}
+    10% {transform:rotate(36deg);}
+    20% {transform:rotate(72deg);}
+    30% {transform:rotate(108deg);}
+    40% {transform:rotate(144deg);}
+    50% {transform:rotate(180deg);}
+    60% {transform:rotate(216deg);}
+    70% {transform:rotate(252deg);}
+    80% {transform:rotate(288deg);}
+    90% {transform:rotate(334deg);}
+    100% {transform:rotate(360deg);}
+}
 
 
-.footer{
+.footer {
     grid-row: 3 / span 1;
     background-color: blue;
 }
