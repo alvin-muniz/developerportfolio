@@ -51,6 +51,20 @@ main div a:visited {
     grid-column: 2 / span 2;
 }
 
+.projects{
+    grid-row: 2/ span 1;
+    grid-column: 2 / span 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-decoration: line-through;
+}
+
+.projects a {
+   background-color: yellow;
+}
+
 .triangle {
     display: flex;
     font-size: 2.5em;
